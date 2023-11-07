@@ -46,10 +46,16 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
+    implementation("io.ktor:ktor-server-websockets:$ktor_version") // for server-side WebSocket support
+    implementation("io.ktor:ktor-client-websockets:$ktor_version") // for client-side WebSocket support
+
+    implementation("io.ktor:ktor-client-cio:$ktor_version")
 
     implementation("com.zaxxer:HikariCP:$hikaricp_version")
     implementation("io.insert-koin:koin-ktor:$koin_version")
 
+
+    implementation("org.apache.httpcomponents:httpclient:4.5.14")
 
 
 
